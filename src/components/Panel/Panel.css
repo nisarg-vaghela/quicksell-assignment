@@ -1,0 +1,20 @@
+.main-panel-container {
+    width: fit-content;
+    height: 100%;
+    padding: 0.6rem;
+    width: 100%;
+    max-width: 100%;
+}
+.main-panel-container .panel-header {
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    display: flex;
+    padding-inline: 2.6px;
+}
+.panel-top-btn{
+    border: none;
+}
+.main-panel-container .panel-card {
+    gap: 1rem;
+    display: grid;
+}
