@@ -5,11 +5,17 @@
     width: 100%;
     max-width: 100%;
 }
+.p-image{
+    border-radius: 50%;
+}
 .main-panel-container .panel-header {
     justify-content: space-between;
     margin: 0 0 20px 0;
     display: flex;
     padding-inline: 2.6px;
+}
+.card-avatar-badge .available {
+    background: green;
 }
 .panel-top-btn{
     border: none;

@@ -32,7 +32,10 @@ function App() {
                 setTickets(results.tickets);
                 let data = {};
                 results.users.forEach((user) => {
-                    data[user.id] = user.name
+                    data[user.id] = {
+                        name: user.name,
+                        available: user.available
+                    }
                 })
                 setUsers(data);
             } catch (error) {
@@ -42,7 +45,7 @@ function App() {
         getKanbanData();
     }, []);
     function nameById(id) {
-        return users[id] ? users[id] : "User not found";
+        return users[id] ? users[id].name : "User not found";
     }
     useEffect(() => {
         if (tickets === undefined) return;
@@ -85,11 +88,11 @@ function App() {
                 "userId",
                 tickets
             );
-            Object.keys(ticketsGroupedByName).forEach(function (key) {
-                var newkey = nameById(key);
-                ticketsGroupedByName[newkey] = ticketsGroupedByName[key];
-                delete ticketsGroupedByName[key];
-            });
+            // Object.keys(ticketsGroupedByName).forEach(function (key) {
+            //     var newkey = nameById(key);
+            //     ticketsGroupedByName[newkey] = ticketsGroupedByName[key];
+            //     delete ticketsGroupedByName[key];
+            // });
 
             setShowData(ticketsGroupedByName);
             setLocalStorage("state", ticketsGroupedByName);
@@ -200,7 +203,7 @@ function App() {
                     <div className="Panel-box-inner">
                         {Object.keys(showData).map((data) => {
                             return (
-                                <Panel header={data} tickets={showData[data]} key={data} users={users}
+                                <Panel SG={SGData} header={data} tickets={showData[data]} key={data} users={(users)?users:{}}
                                 />
                             );
                         })}

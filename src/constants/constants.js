@@ -1,18 +1,13 @@
 import backlog from "../data/images_icons/todo.png"
-import todo from "../data/images_icons/todo.png"
+import todo from "../data/images_icons/3dots.png"
 import in_progress from "../data/images_icons/in_progress.jpg"
 import done from "../data/images_icons/done.png"
 import canceled from "../data/images_icons/canceled.png"
-import no_priority from "../data/images_icons/todo.png"
-import low from "../data/images_icons/low.png"
-import medium from "../data/images_icons/medium.png"
+import no_priority from "../data/images_icons/3dots.png"
+import low from "../data/images_icons/low1.png"
+import medium from "../data/images_icons/mediumO2.png"
 import high from "../data/images_icons/high.png"
 import urgent from "../data/images_icons/urgent.jpg"
-import usr1 from "../data/images_icons/urgent.jpg"
-import usr2 from "../data/images_icons/urgent.jpg"
-import usr3 from "../data/images_icons/urgent.jpg"
-import usr4 from "../data/images_icons/urgent.jpg"
-import usr5 from "../data/images_icons/urgent.jpg"
 
 export const API_URL = "https://api.quicksell.co/v1/internal/frontend-assignment";
 export const priorityMap = {

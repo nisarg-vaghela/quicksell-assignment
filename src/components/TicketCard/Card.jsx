@@ -1,27 +1,28 @@
 import React from 'react';
 import { BsThreeDots, BsCircleFill } from "react-icons/bs";
 import { getLocalStorage } from "D:/Quicksell Assignment/quicksell-assignment-main/src/helpers/localStorage.js";
-import { MdFeaturedVideo } from "react-icons/md";
 import "./Card.css";
 
-const Card = ({ id, profileURL, status, title, tag, userId, users }) => {
+const Card = ({ id, status, title, tag, name }) => {
+    console.log("status is", status,id)
     return (
         <div className="card-container border-curve-card">
             <div className="card-header">
                 <p className="card-id">{id}</p>
-                {(profileURL && (getLocalStorage("SGData") !== "user"))? (
+                {((getLocalStorage("SGData") !== "user"))? (
                     <div className="card-avatar-container">
                         <div className="card-image-container">
                             <img
-                                src={`https://ui-avatars.com/api/?name=${users[userId]}`}
+                                src={`https://avatar.oxro.io/avatar.svg?name=${name}`}
                                 className="image"
                                 alt="temp"
                             />
+                            <span
+                                className={`${status? "card-avatar-badge-available": "card-avatar-badge"}`}
+                            ></span>
                         </div>
 
-                        <span
-                            className={`card-avatar-badge ${status === true ? "available" : ""}`}
-                        ></span>
+                        
                     </div>
                 ) : null}
             </div>

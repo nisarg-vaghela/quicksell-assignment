@@ -47,10 +47,9 @@ body::-webkit-scrollbar {
     width: 6px;
 }
 body::-webkit-scrollbar-thumb {
-    background: var(--primary-blue);
+    background: rgb(56, 147, 163);
     border-radius: 1.8rem;
 }
-
 
 body::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-blue);
