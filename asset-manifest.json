@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/quicksell-assignment/static/css/main.59057a01.chunk.css",
+    "main.js": "/quicksell-assignment/static/js/main.fdd6eafe.chunk.js",
+    "main.js.map": "/quicksell-assignment/static/js/main.fdd6eafe.chunk.js.map",
+    "runtime~main.js": "/quicksell-assignment/static/js/runtime~main.7b44d9b8.js",
+    "runtime~main.js.map": "/quicksell-assignment/static/js/runtime~main.7b44d9b8.js.map",
+    "static/js/2.09905852.chunk.js": "/quicksell-assignment/static/js/2.09905852.chunk.js",
+    "static/js/2.09905852.chunk.js.map": "/quicksell-assignment/static/js/2.09905852.chunk.js.map",
+    "index.html": "/quicksell-assignment/index.html",
+    "precache-manifest.3a94c9b15cc5718b852d8632d4b61b3d.js": "/quicksell-assignment/precache-manifest.3a94c9b15cc5718b852d8632d4b61b3d.js",
+    "service-worker.js": "/quicksell-assignment/service-worker.js",
+    "static/css/main.59057a01.chunk.css.map": "/quicksell-assignment/static/css/main.59057a01.chunk.css.map",
+    "static/media/done.png": "/quicksell-assignment/static/media/done.500bcc1a.png",
+    "static/media/in_progress.jpg": "/quicksell-assignment/static/media/in_progress.6739b1d8.jpg",
+    "static/media/todo.png": "/quicksell-assignment/static/media/todo.35b6f401.png"
+  }
+}
